@@ -15,11 +15,60 @@ public class PatchUpdatePayload {
     private Integer agility;
     private Integer hp;
     private Integer wp;
-    private Integer ptVoid;
-    private Integer ptBlood;
-    private Integer ptBlight;
-    private Integer ptSpirit;
-    private Integer ptWill;
-    private Integer ptEnigma;
-    private Integer ptPassion;
+
+    public Integer getOwner() {
+        return owner;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getPattern() {
+        return pattern;
+    }
+
+    public Integer getLevel() {
+        return level;
+    }
+
+    public Integer getStage() {
+        return stage;
+    }
+
+    public String getPersonality() {
+        return personality;
+    }
+
+    public Integer getHunger() {
+        return hunger;
+    }
+
+    public Integer getHappiness() {
+        return happiness;
+    }
+
+    public Boolean getHealthy() {
+        return isHealthy;
+    }
+
+    public Integer getStrength() {
+        return strength;
+    }
+
+    public Integer getDefense() {
+        return defense;
+    }
+
+    public Integer getAgility() {
+        return agility;
+    }
+
+    public Integer getHp() {
+        return hp;
+    }
+
+    public Integer getWp() {
+        return wp;
+    }
 }
