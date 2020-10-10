@@ -25,5 +25,18 @@ public class PatchController {
         return patchService.createPatch(patch);
     }
 
+    @GetMapping(value="/{id}")
+    public Optional<Patch> getPatchById(@PathVariable("id") int id) {
+        return patchService.getPatchById(id);
+    }
 
+    @DeleteMapping(value="/{id}")
+    public Optional<Patch> deletePatchById(@PathVariable("id") int id) {
+        return patchService.deletePatchById(id);
+    }
+
+    @PutMapping(value="/{id}")
+    public Optional<Patch> updatePatchById(@PathVariable("id") int id, @RequestBody PatchUpdatePayload patchUpdatePayload){
+        return patchService.updatePatchById(id, patchUpdatePayload);
+    }
 }
