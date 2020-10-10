@@ -16,4 +16,23 @@ public class PatchDAO {
     public Collection<Patch> getPatches(){
         return repository.findAll();
     }
+
+    public Patch createPatch(Patch patch){
+        return repository.insert(patch);
+    }
+
+    public Optional<Patch> getPatchById(int id){
+        return repository.findById(id);
+    }
+
+    public Optional<Patch> deletePatchById(int id){
+        Optional<Patch> patch = repository.findById(id);
+        patch.ifPresent(p->repository.delete(p));
+        return patch;
+    }
+
+//    public Optional<Patch> updatePatchById(int id, PatchUpdatePayload patchUpdatePayload) {
+//        Optional<Patch> patch = repository.findById(id);
+//        patch.ifPresent(p->p.)
+//    }
 }
