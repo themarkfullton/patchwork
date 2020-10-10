@@ -10,4 +10,10 @@ import java.util.Optional;
 
 @Component
 public class PatchDAO {
+    @Autowired
+    private PatchRepository repository;
+
+    public Collection<Patch> getPatches(){
+        return repository.findAll();
+    }
 }
