@@ -1,8 +1,8 @@
 package com.tmf.Service;
 
 import com.tmf.DAO.PatchDAO;
-import com.tmf.Models.Patch;
-import com.tmf.Models.PatchUpdatePayload;
+import com.tmf.Entity.Patch;
+import com.tmf.Entity.PatchUpdatePayload;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

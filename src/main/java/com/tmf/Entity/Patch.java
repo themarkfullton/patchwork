@@ -1,4 +1,4 @@
-package com.tmf.Models;
+package com.tmf.Entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Patch {
     @Id
     private Integer id;
+
     private Integer owner;
     private String type;
     private String pattern;

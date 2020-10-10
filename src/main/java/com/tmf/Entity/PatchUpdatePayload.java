@@ -1,4 +1,4 @@
-package com.tmf.Models;
+package com.tmf.Entity;
 
 public class PatchUpdatePayload {
     private Integer owner;

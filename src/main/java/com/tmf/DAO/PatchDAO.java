@@ -1,7 +1,7 @@
 package com.tmf.DAO;
 
-import com.tmf.Models.Patch;
-import com.tmf.Models.PatchUpdatePayload;
+import com.tmf.Entity.Patch;
+import com.tmf.Entity.PatchUpdatePayload;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -22,6 +22,7 @@ public class PatchDAO {
     }
 
     public Optional<Patch> getPatchById(int id){
+
         return repository.findById(id);
     }
 
@@ -40,7 +41,7 @@ public class PatchDAO {
         patch.ifPresent(p->p.setStage(patchUpdatePayload.getStage()));
         patch.ifPresent(p->p.setPersonality(patchUpdatePayload.getPersonality()));
         patch.ifPresent(p->p.setHunger(patchUpdatePayload.getHunger()));
-        patch.ifPresent(p->p.setHappiness(patchUpdatePayload.getHappiness());
+        patch.ifPresent(p->p.setHappiness(patchUpdatePayload.getHappiness()));
         patch.ifPresent(p->p.setStrength(patchUpdatePayload.getStrength()));
         patch.ifPresent(p->p.setDefense(patchUpdatePayload.getDefense()));
         patch.ifPresent(p->p.setAgility(patchUpdatePayload.getAgility()));
