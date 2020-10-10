@@ -16,8 +16,8 @@ public class PatchController {
     private PatchService patchService;
 
     @GetMapping
-    public Collection<Patch> getPatch() {
-        return patchService.getPatch();
+    public Collection<Patch> getPatches() {
+        return patchService.getPatches();
     }
 
     @PostMapping
