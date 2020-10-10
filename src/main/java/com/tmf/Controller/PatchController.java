@@ -15,5 +15,15 @@ public class PatchController {
     @Autowired
     private PatchService patchService;
 
+    @GetMapping
+    public Collection<Patch> getPatch() {
+        return patchService.getPatch();
+    }
+
+    @PostMapping
+    public Patch postPatch(@RequestBody Patch patch) {
+        return patchService.createPatch(patch);
+    }
+
 
 }
