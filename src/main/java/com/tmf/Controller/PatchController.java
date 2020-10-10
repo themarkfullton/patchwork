@@ -35,8 +35,8 @@ public class PatchController {
         return patchService.deletePatchById(id);
     }
 
-//    @PutMapping(value="/{id}")
-//    public Optional<Patch> updatePatchById(@PathVariable("id") int id, @RequestBody PatchUpdatePayload patchUpdatePayload){
-//        return patchService.updatePatchById(id, patchUpdatePayload);
-//    }
+    @PutMapping(value="/{id}")
+    public Optional<Patch> updatePatchById(@PathVariable("id") int id, @RequestBody PatchUpdatePayload patchUpdatePayload){
+        return patchService.updatePatchById(id, patchUpdatePayload);
+    }
 }
