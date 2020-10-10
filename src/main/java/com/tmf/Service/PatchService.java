@@ -21,4 +21,16 @@ public class PatchService {
     public Patch createPatch(Patch patch) {
         return patchDAO.createPatch(patch);
     }
+
+    public Optional<Patch> getPatchById(int id) {
+        return patchDAO.getPatchById(id);
+    }
+
+    public Optional<Patch> deletePatchById(int id){
+        return patchDAO.deletePatchById(id);
+    }
+
+    public Optional<Patch> updatePatchById(int id, PatchUpdatePayload patchUpdatePayload) {
+        return patchDAO.updatePatchById(id, patchUpdatePayload);
+    }
 }
