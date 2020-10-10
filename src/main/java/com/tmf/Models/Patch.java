@@ -22,13 +22,6 @@ public class Patch {
     private Integer agility;
     private Integer hp;
     private Integer wp;
-    private Integer ptVoid;
-    private Integer ptBlood;
-    private Integer ptBlight;
-    private Integer ptSpirit;
-    private Integer ptWill;
-    private Integer ptEnigma;
-    private Integer ptPassion;
 
     public Integer getId() {
         return id;
@@ -145,60 +138,6 @@ public class Patch {
     public void setWp(Integer wp) {
         this.wp = wp;
     }
-
-    public Integer getPtVoid() {
-        return ptVoid;
-    }
-
-    public void setPtVoid(Integer ptVoid) {
-        this.ptVoid = ptVoid;
-    }
-
-    public Integer getPtBlood() {
-        return ptBlood;
-    }
-
-    public void setPtBlood(Integer ptBlood) {
-        this.ptBlood = ptBlood;
-    }
-
-    public Integer getPtBlight() {
-        return ptBlight;
-    }
-
-    public void setPtBlight(Integer ptBlight) {
-        this.ptBlight = ptBlight;
-    }
-
-    public Integer getPtSpirit() {
-        return ptSpirit;
-    }
-
-    public void setPtSpirit(Integer ptSpirit) {
-        this.ptSpirit = ptSpirit;
-    }
-
-    public Integer getPtWill() {
-        return ptWill;
-    }
-
-    public void setPtWill(Integer ptWill) {
-        this.ptWill = ptWill;
-    }
-
-    public Integer getPtEnigma() {
-        return ptEnigma;
-    }
-
-    public void setPtEnigma(Integer ptEnigma) {
-        this.ptEnigma = ptEnigma;
-    }
-
-    public Integer getPtPassion() {
-        return ptPassion;
-    }
-
-    public void setPtPassion(Integer ptPassion) {
-        this.ptPassion = ptPassion;
-    }
 }
+
+

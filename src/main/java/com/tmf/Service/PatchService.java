@@ -30,7 +30,7 @@ public class PatchService {
         return patchDAO.deletePatchById(id);
     }
 
-    public Optional<Patch> updatePatchById(int id, PatchUpdatePayload patchUpdatePayload) {
-        return patchDAO.updatePatchById(id, patchUpdatePayload);
-    }
+//    public Optional<Patch> updatePatchById(int id, PatchUpdatePayload patchUpdatePayload) {
+//        return patchDAO.updatePatchById(id, patchUpdatePayload);
+//    }
 }
