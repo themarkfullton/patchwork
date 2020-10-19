@@ -34,19 +34,11 @@ public class PatchDAO {
 
     public Optional<Patch> updatePatchById(int id, PatchUpdatePayload patchUpdatePayload) {
         Optional<Patch> patch = repository.findById(id);
-        patch.ifPresent(p->p.setOwner(patchUpdatePayload.getOwner()));
-        patch.ifPresent(p->p.setType(patchUpdatePayload.getType()));
+        patch.ifPresent(p->p.setName(patchUpdatePayload.getName()));
+        patch.ifPresent(p->p.setCreator(patchUpdatePayload.getCreator()));
         patch.ifPresent(p->p.setPattern(patchUpdatePayload.getPattern()));
-        patch.ifPresent(p->p.setLevel(patchUpdatePayload.getLevel()));
-        patch.ifPresent(p->p.setStage(patchUpdatePayload.getStage()));
-        patch.ifPresent(p->p.setPersonality(patchUpdatePayload.getPersonality()));
-        patch.ifPresent(p->p.setHunger(patchUpdatePayload.getHunger()));
-        patch.ifPresent(p->p.setHappiness(patchUpdatePayload.getHappiness()));
-        patch.ifPresent(p->p.setStrength(patchUpdatePayload.getStrength()));
-        patch.ifPresent(p->p.setDefense(patchUpdatePayload.getDefense()));
-        patch.ifPresent(p->p.setAgility(patchUpdatePayload.getAgility()));
-        patch.ifPresent(p->p.setHp(patchUpdatePayload.getHp()));
-        patch.ifPresent(p->p.setWp(patchUpdatePayload.getWp()));
+        patch.ifPresent(p->p.setFabric(patchUpdatePayload.getFabric()));
+        patch.ifPresent(p->p.setTemperment(patchUpdatePayload.getTemperment()));
         patch.ifPresent(p->repository.save(p));
         return patch;
     }

@@ -9,39 +9,30 @@ public class Patch {
     @Id
     private Integer id;
 
-    private Integer owner;
-    private String type;
+    private String creator;
+    private String name;
     private String pattern;
-    private Integer level;
-    private Integer stage;
-    private String personality;
-    private Integer hunger;
-    private Integer happiness;
-    private Boolean isHealthy;
-    private Integer strength;
-    private Integer defense;
-    private Integer agility;
-    private Integer hp;
-    private Integer wp;
+    private String fabric;
+    private String temperment;
 
     public Integer getId() {
         return id;
     }
 
-    public Integer getOwner() {
-        return owner;
+    public String getCreator() {
+        return creator;
     }
 
-    public void setOwner(Integer owner) {
-        this.owner = owner;
+    public void setCreator(String creator) {
+        this.creator = creator;
     }
 
-    public String getType() {
-        return type;
+    public String getName() {
+        return name;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPattern() {
@@ -52,93 +43,22 @@ public class Patch {
         this.pattern = pattern;
     }
 
-    public Integer getLevel() {
-        return level;
+    public String getFabric() {
+        return fabric;
     }
 
-    public void setLevel(Integer level) {
-        this.level = level;
+    public void setFabric(String fabric) {
+        this.fabric = fabric;
     }
 
-    public Integer getStage() {
-        return stage;
+    public String getTemperment() {
+        return temperment;
     }
 
-    public void setStage(Integer stage) {
-        this.stage = stage;
+    public void setTemperment(String temperment) {
+        this.temperment = temperment;
     }
 
-    public String getPersonality() {
-        return personality;
-    }
-
-    public void setPersonality(String personality) {
-        this.personality = personality;
-    }
-
-    public Integer getHunger() {
-        return hunger;
-    }
-
-    public void setHunger(Integer hunger) {
-        this.hunger = hunger;
-    }
-
-    public Integer getHappiness() {
-        return happiness;
-    }
-
-    public void setHappiness(Integer happiness) {
-        this.happiness = happiness;
-    }
-
-    public Boolean getHealthy() {
-        return isHealthy;
-    }
-
-    public void setHealthy(Boolean healthy) {
-        isHealthy = healthy;
-    }
-
-    public Integer getStrength() {
-        return strength;
-    }
-
-    public void setStrength(Integer strength) {
-        this.strength = strength;
-    }
-
-    public Integer getDefense() {
-        return defense;
-    }
-
-    public void setDefense(Integer defense) {
-        this.defense = defense;
-    }
-
-    public Integer getAgility() {
-        return agility;
-    }
-
-    public void setAgility(Integer agility) {
-        this.agility = agility;
-    }
-
-    public Integer getHp() {
-        return hp;
-    }
-
-    public void setHp(Integer hp) {
-        this.hp = hp;
-    }
-
-    public Integer getWp() {
-        return wp;
-    }
-
-    public void setWp(Integer wp) {
-        this.wp = wp;
-    }
 }
 
 
