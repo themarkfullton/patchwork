@@ -1,7 +1,7 @@
 package com.tmf.DAO;
 
-import com.tmf.Entity.Patch;
-import com.tmf.Entity.PatchUpdatePayload;
+import com.tmf.Models.Patch;
+import com.tmf.Models.PatchUpdatePayload;
 import com.tmf.Repositories.PatchRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

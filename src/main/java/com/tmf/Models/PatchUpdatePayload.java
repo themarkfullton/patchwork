@@ -1,6 +1,4 @@
-package com.tmf.Entity;
-
-import org.springframework.data.annotation.Id;
+package com.tmf.Models;
 
 public class PatchUpdatePayload {
     private String creator;

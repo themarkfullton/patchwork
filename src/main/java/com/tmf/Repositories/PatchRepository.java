@@ -1,6 +1,6 @@
 package com.tmf.Repositories;
 
-import com.tmf.Entity.Patch;
+import com.tmf.Models.Patch;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
