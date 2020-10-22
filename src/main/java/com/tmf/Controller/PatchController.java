@@ -21,7 +21,8 @@ public class PatchController {
     }
 
     @PostMapping
-    public Patch postPatch(@RequestBody Patch patch) {
+    @ResponseStatus
+    public Patch createPatch(@RequestBody Patch patch) {
         return patchService.createPatch(patch);
     }
 
