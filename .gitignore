@@ -1,5 +1,5 @@
 target
 
-.properties
+src/main/resources/application.properties
 
 .env
