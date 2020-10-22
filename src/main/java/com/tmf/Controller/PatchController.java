@@ -14,7 +14,7 @@ import java.util.List;
 import static java.util.Arrays.asList;
 
 @RestController
-@RequestMapping("/patch")
+@RequestMapping("/patchwork")
 public class PatchController {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(PatchController.class);
