@@ -25,20 +25,20 @@ public class PatchController {
         this.patchRepository = patchRepository;
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("patch")
     @ResponseStatus(HttpStatus.CREATED)
     public Patch postPatch(@RequestBody Patch patch){
         return patchRepository.save(patch);
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("patches")
     public List<Patch> getPatches() {
         return patchRepository.findAll();
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("patch/{id}")
     public ResponseEntity<Patch> getPatch(@PathVariable String id) {
         Patch patch = patchRepository.findOne(id);
@@ -50,45 +50,45 @@ public class PatchController {
         return ResponseEntity.ok(patch);
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("patches/{ids}")
     public List<Patch> getPatches(@PathVariable String ids){
         List<String> listIds = asList(ids.split(","));
         return patchRepository.findAll(listIds);
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("patches/count")
     public Long getCount() {
         return patchRepository.count();
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "http://localhost:3000")
     @DeleteMapping("patch/{id}")
     public Long deletePatch(@PathVariable String id){
         return patchRepository.delete(id);
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "http://localhost:3000")
     @DeleteMapping("patches/{ids}")
     public Long deletePatches(@PathVariable String ids){
         List<String> listIds = asList(ids.split(","));
         return patchRepository.delete(listIds);
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "http://localhost:3000")
     @DeleteMapping("patches")
     public Long deletePatches() {
         return patchRepository.deleteAll();
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "http://localhost:3000")
     @PutMapping("patch")
     public Patch putPatch(@RequestBody Patch patch) {
         return patchRepository.update(patch);
     }
 
-    @CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "http://localhost:3000")
     @PutMapping("patches")
     public Long putPatch(@RequestBody List<Patch> patches) {
         return patchRepository.update(patches);
