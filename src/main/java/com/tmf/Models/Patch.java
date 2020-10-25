@@ -20,6 +20,7 @@ public class Patch {
     private String pattern;
     private String texture;
     private String temperment;
+    private String greeting;
     private Date creationDay = new Date();
 
     public ObjectId getId() {
@@ -73,6 +74,15 @@ public class Patch {
 
     public Patch setTemperment(String temperment){
         this.temperment = temperment;
+        return this;
+    }
+
+    public String getGreeting() {
+        return greeting;
+    }
+
+    public Patch setGreeting(String greeting){
+        this.greeting = greeting;
         return this;
     }
 
