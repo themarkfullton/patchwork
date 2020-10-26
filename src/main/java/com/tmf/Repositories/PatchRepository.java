@@ -25,7 +25,7 @@ public interface PatchRepository {
 
     long deleteAll();
 
-    Patch update(Patch patch);
+    Patch update(String id, Patch patch);
 
     long update(List<Patch> patches);
 }

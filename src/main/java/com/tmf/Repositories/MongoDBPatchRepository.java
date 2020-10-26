@@ -103,9 +103,9 @@ public class MongoDBPatchRepository implements  PatchRepository {
     }
 
     @Override
-    public Patch update(Patch patch) {
+    public Patch update(String id, Patch patch) {
         FindOneAndReplaceOptions options = new FindOneAndReplaceOptions().returnDocument(AFTER);
-        return patchCollection.findOneAndReplace(eq("_id", patch.getId()), patch, options);
+        return patchCollection.findOneAndReplace(eq("_id", new ObjectId(id)), patch, options);
     }
 
     @Override

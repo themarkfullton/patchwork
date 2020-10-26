@@ -83,9 +83,9 @@ public class PatchController {
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
-    @PutMapping("patch")
-    public Patch putPatch(@RequestBody Patch patch) {
-        return patchRepository.update(patch);
+    @PutMapping("patch/{id}")
+    public Patch putPatch(@PathVariable String id, @RequestBody Patch patch) {
+        return patchRepository.update(id, patch);
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
