@@ -25,20 +25,20 @@ public class PatchController {
         this.patchRepository = patchRepository;
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://patchwork-friends.herokuapp.com")
     @PostMapping("patch")
     @ResponseStatus(HttpStatus.CREATED)
     public Patch postPatch(@RequestBody Patch patch){
         return patchRepository.save(patch);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://patchwork-friends.herokuapp.com")
     @GetMapping("patches")
     public List<Patch> getPatches() {
         return patchRepository.findAll();
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://patchwork-friends.herokuapp.com")
     @GetMapping("patch/{id}")
     public ResponseEntity<Patch> getPatch(@PathVariable String id) {
         Patch patch = patchRepository.findOne(id);
@@ -50,45 +50,45 @@ public class PatchController {
         return ResponseEntity.ok(patch);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://patchwork-friends.herokuapp.com")
     @GetMapping("patches/{ids}")
     public List<Patch> getPatches(@PathVariable String ids){
         List<String> listIds = asList(ids.split(","));
         return patchRepository.findAll(listIds);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://patchwork-friends.herokuapp.com")
     @GetMapping("patches/count")
     public Long getCount() {
         return patchRepository.count();
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://patchwork-friends.herokuapp.com")
     @DeleteMapping("patch/{id}")
     public Long deletePatch(@PathVariable String id){
         return patchRepository.delete(id);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://patchwork-friends.herokuapp.com")
     @DeleteMapping("patches/{ids}")
     public Long deletePatches(@PathVariable String ids){
         List<String> listIds = asList(ids.split(","));
         return patchRepository.delete(listIds);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://patchwork-friends.herokuapp.com")
     @DeleteMapping("patches")
     public Long deletePatches() {
         return patchRepository.deleteAll();
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://patchwork-friends.herokuapp.com")
     @PutMapping("patch/{id}")
     public Patch putPatch(@PathVariable String id, @RequestBody Patch patch) {
         return patchRepository.update(id, patch);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "https://patchwork-friends.herokuapp.com")
     @PutMapping("patches")
     public Long putPatch(@RequestBody List<Patch> patches) {
         return patchRepository.update(patches);
