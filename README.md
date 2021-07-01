@@ -1,22 +1,17 @@
 # PATCHWORK
-### Back End (Java + Spring)
+### Back End Tutorial (Java + Spring)
 #### [Patchwork Front End](https://github.com/themarkfullton/patchwork-front-end) (React)
 
-**LINK TO LIVE:** https://patchwork-friends.herokuapp.com/
 
-Full Stack. Virtual Pet game meets Frankenstein. Create your own doll companions and fight a faceless evil. Still under construction, but you can still create, edit, and delete "patches" (pets).
+Threw this together to show a student how a Java + Spring backend would work. (In comparison to MERN.) 
+
+Backend for an adoptables / pet website where users can build their own Frankenstein "monsters."
+
 
 ## Technologies Used
 
-Java, Spring, MongoDB
-
-## Motivation
-
-Virtual Pet games used to be all the rage and I was curious to figure out how they might work since there are so many moving parts. I was especially curious to see what a modern React rendition might look like, seeing as the design might benefit from it.
-
-## Future Plans
-
-This is still under construction. Still need to add authentication, items, exploration, battle, random events, and unlockable textures/patterns.
+- Java (Spring)
+- MongoDB
 
 ## Screenshots
 
