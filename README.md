@@ -7,6 +7,8 @@ Threw this together to show a student how a Java + Spring backend would work. (I
 
 Backend for an adoptables / pet website where users can build their own Frankenstein "monsters."
 
+__Live currently de-activated__
+
 
 ## Technologies Used
 
